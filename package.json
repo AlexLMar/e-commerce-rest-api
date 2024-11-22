@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-project---e-commerce-application-rest-api",
+  "version": "1.0.0",
+  "description": "Express.js e-commerce application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "test:db": "psql -U postgres -d postgres -f ./sql/psql_database_setup.sql && jest"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "express-validator": "^7.2.0",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
